@@ -1,5 +1,9 @@
 # Kirby .htaccess
 
+RewriteEngine On
+
+RewriteRule ^(.*)\.html$ $1.php [L,R]
+
 # rewrite rules
 <IfModule mod_rewrite.c>
 
